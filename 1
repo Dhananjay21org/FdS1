@@ -1,0 +1,31 @@
+#include <stdio.h>  
+ #include<math.h>  
+ int main() {  
+     char op;  
+     int a,b,result, fact, i;  
+     do { printf("enter the operator : ");  
+     scanf("%c",&op);  
+     switch(op) {  
+         case '+' : printf("enter two numbers : ");  
+                 scanf("%d%d",&a,&b);  
+                 printf("the sum of two numbers is = %d\n",a+b);  
+                 break;  
+         case '-' :  
+                 printf("enter two numbers : ");  
+                 scanf("%d%d",&a,&b);  
+                 printf("diff =%d\n", a-b);  
+                 break;  
+         case'/' : printf("enter two numbers : "); 
+                 scanf("%d%d",&a,&b);  
+                 printf("division=%d\n", a/b);  
+                 break;  
+         case '*' :  
+                 printf("enter two numbers : ");  
+                 scanf("%d%d",&a,&b);  
+                 printf("multiplication=%d\n", a*b);  
+                 break;  
+     } 
+         
+ }while (op!= '#');  
+     return 0; 
+ }
